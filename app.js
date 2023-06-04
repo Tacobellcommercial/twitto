@@ -31,15 +31,15 @@ const User = mongoose.model("User", userSchema);
 const Twit = new mongoose.model("Twit", twitSchema);
 
 passport.use(new LocalStrategy(function verify(username, password, callback){
-  User.find({name: username}, (err, userObject)=>{
+  User.findOne({name: username}, (err, userObject)=>{
     if (err){
       return callback(err);
     }
-    if (userObject.length == 0){
+    if (!userObject){
       return callback(null, false, {message: "Incorrect username or password!"});
     }
 
-    bcrypt.compare(password, userObject[0].password, (err, result)=>{
+    bcrypt.compare(password, userObject.password, (err, result)=>{
       if (err){
         return callback(err);
       }
@@ -47,7 +47,7 @@ passport.use(new LocalStrategy(function verify(username, password, callback){
         return callback(null, false, {message: "Incorrect username or password!"});
       }
 
-      return callback(null, userObject[0]);
+      return callback(null, userObject);
 
     })
   })
