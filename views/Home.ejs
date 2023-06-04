@@ -1,0 +1,68 @@
+<%- include("Header") -%>
+<div class="header-intro">
+  <h1 class="hiddenClass shiftDown">Twitto</h1>
+  <h2 class="hiddenClass">Welcome to the new way of messaging.</h2>
+  <a href="/twit" class="btn btn-primary">Start Twitting</a>
+  <a href="<%=link%>" class="btn btn-outline-primary"><%=text%></a>
+
+</div>
+
+<div class="features">
+    <div class="row">
+        <div class="col-md-4">
+          <i class="fa-solid fa-truck-fast"></i>
+          <h1>Fast.</h1>
+          <p>Easy and simple to use</p>
+        </div>
+        <div class="col-md-4">
+          <i class="fa-solid fa-thumbs-up"></i>
+          <h1>Efficient.</h1>
+          <p>Send twits with ease</p>
+        </div>
+        <div class="col-md-4">
+          <i class="fa-sharp fa-solid fa-thumbtack"></i>
+          <h1>Present.</h1>
+          <p>Show your ideas in a unique way</p>
+        </div>
+    </div>
+</div>
+
+<div class="reviews">
+  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <h1>Easy and fast to use. Thank you very much!</h1>
+        <img src="https://randomuser.me/api/portraits/men/43.jpg" alt="...">
+        <p>Jimmy Davis</p>
+      </div>
+      <div class="carousel-item">
+        <h1>I love this, looking forward to twit now!</h1>
+        <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="...">
+        <p>Jacob Smith</p>
+      </div>
+      <div class="carousel-item">
+        <h1>Twitting is so fun. Tell your friends now!</h1>
+        <img src="https://randomuser.me/api/portraits/women/90.jpg" alt="...">
+        <p>Christine Johnson</p>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+
+<div class="start-twitting">
+    <h1>What are you waiting for?</h1>
+    <h2>Start twitting today.</h2>
+    <a href="/twit" class="btn btn-primary">Start Twitting</a>
+    <a href="<%=link%>" class="btn btn-outline-primary"><%=text%></a>
+
+</div>
+<script src="show_title.js"></script>
+<%- include("Footer") -%>

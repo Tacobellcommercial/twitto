@@ -1,0 +1,36 @@
+<%- include("Header") -%>
+<div class="twit-container">
+  <form class="twit-item" action="/like" method="post">
+    <a href="/profile/<%=authorId%>">@<%=result.author%></a>
+    <p><%=result.content%></p>
+    <input style="display: none" name="objectId" value="<%=result._id%>"/>
+    <div class="twit-buttons">
+        <button type="submit" class="btn btn-outline-danger"><i class="fa-solid fa-heart"></i> <%=result.likes%></button>
+    </div>
+  </form>
+</div>
+
+<div class="twit-comments">
+  <h1 class="comments-header">Comments</h1>
+  <%if (result.comments.length == 0){%>
+    <p class="sub-header">No comments yet, be the first one!</p>
+  <%}%>
+  <form class="make-comment" action="/comment" method="post">
+      <h1>Make a comment</h1>
+      <textarea rows="5" cols="70" placeholder="Write something..." name="content"></textarea>
+      <input type="text" name="name" value="<%=nameifLogin%>">
+      <input type="text" name="id" value="<%=result._id%>">
+      <input type="text" name="userId" value="<%=id%>">
+      <button type="submit" class="btn btn-outline-primary">Post</button>
+  </form>
+
+  <div class="comments-section">
+      <%result.comments.forEach(element=>{%>
+          <div class="comment-item">
+            <a href="/profile/<%=element.userId%>">@<%=element.author%></a>
+            <p><%=element.content%></p>
+          </div>
+      <%})%>
+  </div>
+</div>
+<%- include("Footer") -%>

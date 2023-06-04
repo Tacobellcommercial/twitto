@@ -1,0 +1,817 @@
+/*OTHER */
+
+html{
+  overflow-x: hidden;
+}
+
+body{
+  overflow-x: hidden;
+  margin: 0;
+}
+
+.error-header{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 2.5rem;
+}
+
+/* NAV BAR */
+.navbar-brand{
+  font-size: 3rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+}
+
+.nav-item{
+  margin-right: 0.75rem;
+}
+
+.nav-item a{
+  border-bottom: 1px solid #fcfcfc;
+  transition: border-bottom 0.25s;
+}
+
+.nav-item a:hover{
+  border-bottom: 1px solid black;
+}
+
+@media (max-width: 1400px){
+  .navbar-brand{
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 1150px){
+  .navbar-brand{
+    font-size: 2rem;
+  }
+}
+
+/* HEADER SECTION */
+
+.header-intro{
+  text-align: center;
+  padding: 15.8% 18%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("/images/header-image.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.header-intro h1, .header-intro h2{
+  transition: all 1s;
+}
+
+.hiddenClass{
+  opacity: 0;
+}
+
+.shiftDown{
+  margin-bottom: 2%;
+}
+
+.header-intro h1{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 4rem;
+}
+
+.header-intro h2{
+  font-size: 2rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  margin-bottom: 2%;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header-intro a{
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.features{
+  padding: 7%;
+  text-align: center;
+}
+
+.features i{
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  transition: color 0.5s;
+}
+
+.features i:hover{
+  color: gray;
+}
+
+.features h1{
+  font-size: 2.5rem;
+  font-weight: 900;
+  font-family: "Montserrat", sans-serif;
+}
+
+.features p{
+  font-size: 1.35rem;
+  font-family: "Quicksand", sans-serif;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 700;
+  color: gray;
+}
+
+.reviews{
+  background-color: #756b6b;
+}
+
+.carousel-inner{
+  padding: 7% 15%;
+  text-align: center;
+  color: white;
+}
+
+.carousel-inner h1{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  margin-bottom: 1.5%;
+  font-size: 2.5rem;
+}
+
+.carousel-inner img{
+  border-radius: 50%;
+}
+
+.carousel-inner p{
+  display: inline-block;
+  margin-left: 1rem;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.25rem;
+}
+
+.start-twitting{
+  padding: 3.5% 10% 5% 10%;
+  text-align: center;
+}
+
+.start-twitting h1{
+  font-size: 3rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  margin-bottom: 1.75rem;
+}
+
+.start-twitting h2{
+  font-size: 2rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  margin-bottom: 1.75rem;
+}
+
+.start-twitting a{
+  font-size: 1rem;
+}
+
+@media (max-width: 1300px){
+  .start-twitting h1{
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+
+
+@media (max-width: 900px){
+  .header-intro h1{
+    font-size: 3rem;
+  }
+  .header-intro h2{
+    font-size: 1.5rem;
+  }
+
+  .features h1{
+    font-size: 2rem;
+  }
+
+  .features p{
+    font-size: 1.15rem;
+  }
+
+  .features i{
+    font-size: 2.5rem;
+  }
+
+  .carousel-inner h1{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    margin-bottom: 1.5%;
+    font-size: 1.8rem;
+  }
+
+  .carousel-inner img{
+    width: 15%;
+  }
+
+  .start-twitting h1{
+    font-size: 2rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .start-twitting h2{
+    font-size: 1.5rem;
+    margin-bottom: 1.25rem;
+  }
+}
+
+@media (max-width: 630px){
+  .header-intro h1{
+    font-size: 2.5rem;
+  }
+  .header-intro h2{
+    font-size: 1.25rem;
+  }
+
+  .header-intro a{
+    font-size: 0.75rem;
+  }
+
+  .features h1{
+    font-size: 1.75rem;
+  }
+
+  .features p{
+    font-size: 1rem;
+  }
+
+  .features i{
+    font-size: 2.25rem;
+  }
+
+  .carousel-inner h1{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    margin-bottom: 1.5%;
+    font-size: 1.25rem;
+  }
+
+  .carousel-inner img{
+    border-radius: 50%;
+  }
+
+  .carousel-inner p{
+    font-size: 1rem;
+  }
+
+  .start-twitting h1{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .start-twitting h2{
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+
+  .start-twitting a{
+    font-size: 0.75rem;
+  }
+}
+
+
+/*MAKE TWIT SECTION*/
+
+.user-profile-section{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  margin-top: 4.5rem;
+}
+
+.user-profile-section h1{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+
+
+.twit-section{
+  text-align: center;
+  padding: 2rem;
+  margin-top: 1rem;
+  background-color: #dedede;
+  width: 40%;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: padding 0.3s;
+}
+
+.twit-section:hover{
+  padding: 1.5rem;
+}
+
+.make-twit-header{
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 2.5rem;
+}
+
+.twit-section textarea{
+  resize: none;
+  width: 75%;
+  border: none;
+  border-radius: 5px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+
+.twit-section button{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  border: none;
+  background-color: white;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  border-radius: 5px;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.twit-section button:hover{
+  background-color: #c4c4c4;
+  color: white;
+}
+
+@media (max-width: 1350px){
+  .twit-section{
+    padding: 1rem;
+  }
+
+  .twit-section .make-twit-header{
+    font-size: 2rem;
+  }
+
+  .twit-section textarea{
+    height: 5rem;
+  }
+
+  .twit-section button{
+    font-size: 1rem;
+  }
+}
+
+
+@media (max-width: 900px){
+
+  .user-profile-section{
+    text-align: center;
+  }
+
+  .twit-section{
+    width: 50%;
+  }
+
+  .twit-section .make-twit-header{
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 650px){
+  .user-profile-section h1{
+    font-size: 1.25rem;
+  }
+
+  .twit-section .make-twit-header{
+    font-size: 1.5rem;
+  }
+
+  .twit-section{
+    width: 58%;
+  }
+}
+
+
+/* YOUR TWITS SECTION*/
+
+.your-twits-section{
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.your-twits-header{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+
+/* REGISTER SECTION */
+
+.register-section{
+  background-color: #dedede;
+  padding: 2% 5%;
+  width: 45%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  margin-top: 5rem;
+}
+
+.register-section h1{
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.register-section h2{
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.register-section input{
+  margin-bottom: 1.5rem;
+}
+
+.register-section button{
+  border: none;
+  border-radius: 5px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  font-family: "Roboto Mono", sans-serif;
+  transition: background-color 0.5s;
+}
+
+.register-section button:hover{
+  background-color: white;
+}
+
+.register-section .warning{
+  color: red;
+  font-size: 1rem;
+  font-family: "Roboto Mono", sans-serif;
+}
+
+@media (max-width: 1250px){
+  .register-section h1{
+    font-size: 2rem;
+  }
+  .register-section h2{
+    font-size: 1.5rem;
+  }
+
+  .register-section button{
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 750px){
+  .register-section h1{
+    font-size: 1.5rem;
+  }
+  .register-section h2{
+    font-size: 1.25rem;
+  }
+
+  .register-section button{
+    font-size: 1rem;
+  }
+
+  .register-section input{
+    font-size: 1rem;
+  }
+
+  .register-section{
+    width: 70%;
+  }
+}
+
+@media (max-width: 375px){
+  .register-section input{
+    width: 7rem;
+  }
+}
+
+
+/* LOGIN SECTION is just the same as the other classes above*/
+
+
+/*PROFILE SECTION*/
+
+.user-information-section{
+  width: 45%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.twits-section h1{
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.twits-section p{
+  text-align: center;
+  font-size: 1.25rem;
+}
+
+.twit-container{
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.twit-item{
+  background-color: #ebebeb;
+  padding: 5%;
+  max-height: 23rem;
+  border-radius: 8px;
+  box-shadow: 0px 8px 9px -5px rgba(0,0,0,0.75);
+  transition: background-color 0.5s, padding 0.5s, box-shadow 0.5s;
+  overflow-x: hidden;
+  margin: 5% 0%;
+}
+
+.twit-item a{
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+}
+
+.twit-buttons{
+  display: inline-block;
+  margin-left: 75%;
+  margin-top: 10%;
+}
+
+.twit-buttons a{
+  display: inline-block;
+}
+
+.twit-item:hover{
+  background-color: #f2f2f2;
+  box-shadow: 0px 8px 9px -5px rgba(180,180,180, 1);
+  padding:  5% 8%;
+}
+
+.twit-item p{
+  font-family: "Roboto Mono", sans-serif;
+  font-weight: 500;
+  font-size: 1.25rem;
+  text-align: left;
+}
+
+@media (max-width: 1500px){
+  .twit-buttons{
+    margin: 0;
+  }
+}
+
+@media (max-width: 900px){
+  .user-information-section{
+    text-align: center;
+    width: 100%;
+  }
+
+  .twit-item p{
+    font-size: 1rem;
+  }
+
+  .twit-item{
+    padding: 2%;
+  }
+}
+
+@media (max-width: 700px){
+  .user-information-section{
+    width: 50%;
+  }
+  .user-information-section h1{
+    font-size: 1.75rem;
+  }
+
+  .twits-section h1{
+    font-size: 1.75rem;
+  }
+
+  .twit-item p{
+    font-size: 0.75rem;
+  }
+  .twit-buttons a, .twit-buttons button{
+    font-size: 0.75rem !important;
+  }
+}
+
+@media(max-width: 550px){
+  .twit-container{
+    width: 50%;
+  }
+
+  .user-information-section h1{
+    font-size: 1.3rem;
+  }
+}
+
+
+/* TWIT OBJECT */
+
+.twit-comments{
+  text-align: center;
+}
+
+.twit-comments .comments-header{
+  margin-top: 5rem;
+  font-size: 2.5rem;
+}
+
+
+.make-comment{
+  margin-top: 1rem;
+  background-color: #e3e3e3;
+  padding: 0.5% 2% 0.5% 2%;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+}
+
+.make-comment h1{
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.make-comment button{
+  font-size: 1rem;
+}
+
+.make-comment textarea{
+  margin-top: 1rem;
+  width: 95%;
+  resize: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  height: 5rem;
+}
+
+.make-comment input{
+  display: none;
+}
+
+.comment-item{
+  background-color: #e0e0e0;
+  margin-top: 1rem;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 3px;
+  text-align: left;
+  padding: 0.5% 2% 0.5% 1%;
+}
+
+.comment-item a{
+  font-size: 1.25rem;
+  text-decoration: none;
+}
+
+.comment-item p{
+  background-color: white;
+  padding: 2%;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 1.15rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+@media(max-width: 1210px){
+  .make-comment h1{
+    font-size: 1.4rem;
+  }
+
+  .make-comment button{
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 950px){
+  .make-comment h1{
+    font-size: 1.3rem;
+  }
+
+  .make-comment{
+    width: 50%;
+  }
+}
+
+@media (max-width: 800px){
+
+  .twit-comments .comments-header{
+    margin-top: 2.5rem;
+  }
+
+  .make-comment{
+    width: 54%;
+  }
+
+  .make-comment textarea{
+    height: 3rem;
+  }
+
+  .make-comment button{
+    margin-top: 0px !important;
+  }
+
+  .make-comment button{
+    font-size: 0.75rem !important;
+  }
+}
+
+@media (max-width: 450px){
+  .make-comment h1{
+    font-size: 1.25rem;
+  }
+
+  .make-comment textarea{
+    height: 2.5rem;
+  }
+
+  .make-comment{
+    width: 75%;
+  }
+
+}
+
+/* SEARCH SECTION */
+
+.search-container .main-header{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  margin-top: 2.5rem;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.relevant-twits{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.users-container{
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #dbdbd9;
+  padding: 0.75%;
+}
+
+.users-container a{
+  display: block;
+  font-size: 1.25rem;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 1.75%;
+  background-color: white;
+  border-radius: 7px;
+}
+
+.search-container h2{
+  font-family: "Ubuntu", sans-serif;
+  font-family: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.search-container .subtext{
+  text-align: center;
+  font-family:"Quicksand", sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+@media (max-width: 800px){
+  .users-container a{
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px){
+  .users-container{
+    width: 45%;
+  }
+}
+
+@media (max-width: 500px){
+  .users-container a{
+    font-size: 0.75rem;
+  }
+}

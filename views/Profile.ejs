@@ -1,0 +1,25 @@
+<%- include("Header") -%>
+<div class="user-information-section">
+  <h1>@<%=username%></h1>
+  <p><%=description%></p>
+</div>
+<div class="twits-section">
+    <h1>Twits</h1>
+    <%if (twitsArray.length == 0){%>
+      <p>No posts yet...</p>
+    <%}%>
+
+    <div class="twit-container">
+      <%twitsArray.forEach(element=>{%>
+        <form class="twit-item" action="/like" method="post">
+          <p><%=element.content.slice(0, 50)%>...</p>
+          <input style="display: none" name="objectId" value="<%=element._id%>"/>
+          <div class="twit-buttons">
+              <a href="/twits/<%=element._id%>" class="btn btn-outline-success"><i class="fa-solid fa-arrow-right"></i></a>
+              <button type="submit" class="btn btn-outline-danger"><i class="fa-solid fa-heart"></i> <%=element.likes%></button>
+          </div>
+        </form>
+      <%})%>
+    </div>
+</div>
+<%- include("Footer") -%>

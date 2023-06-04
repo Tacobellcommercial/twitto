@@ -1,0 +1,52 @@
+<%- include("Header") -%>
+  <div class="search-container">
+      <h1 class="main-header">You searched for: <%=keyword%></h1>
+
+      <div class="relevant-twits">
+        <h2>Twits</h2>
+        <%if (relevantTwits.length === 0){%>
+            <p class="subtext">No results found...</p>
+        <%}%>
+        <div class="twit-container">
+          <%relevantTwits.forEach(element=>{%>
+            <form class="twit-item" action="/like" method="post">
+              <p><%=element.content.slice(0, 70)%>...</p>
+              <input style="display: none" name="objectId" value="<%=element._id%>"/>
+              <div class="twit-buttons">
+                  <a href="/twits/<%=element._id%>" class="btn btn-outline-success"><i class="fa-solid fa-arrow-right"></i></a>
+                  <button class="btn btn-outline-danger"><i class="fa-solid fa-heart"></i> <%=element.likes%></button>
+              </div>
+            </form>
+          <%})%>
+        </div>
+      </div>
+
+      <div class="relevant-users">
+          <h2>Users</h2>
+          <%if (relevantUsers.length === 0){%>
+              <p class="subtext">No results found...</p>
+          <%}%>
+          <div class="users-container">
+            <%relevantUsers.forEach(element=>{%>
+                <a href="/profile/<%=element._id%>">@<%=element.name%></a>
+            <%})%>
+          </div>
+      </div>
+
+      <div class="newest-twits">
+          <h2>Trending Twits!</h2>
+          <div class="twit-container">
+            <%trendingTwits.forEach(element=>{%>
+              <form class="twit-item" action="/like" method="post">
+                <p><%=element.content.slice(0, 70)%>...</p>
+                <input style="display: none" name="objectId" value="<%=element._id%>"/>
+                <div class="twit-buttons">
+                    <a href="/twits/<%=element._id%>" class="btn btn-outline-success"><i class="fa-solid fa-arrow-right"></i></a>
+                    <button class="btn btn-outline-danger"><i class="fa-solid fa-heart"></i> <%=element.likes%></button>
+                </div>
+              </form>
+            <%})%>
+          </div>
+      </div>
+  </div>
+<%- include("Footer") -%>

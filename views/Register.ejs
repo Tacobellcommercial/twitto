@@ -1,0 +1,24 @@
+<%- include("Header") -%>
+  <div class="register-section">
+    <form method="post" action="/register">
+        <h1>Make an Account</h1>
+        <%if (accountTaken == "true"){%>
+            <p class="warning">This account is already taken!</p>
+        <%}%>
+        <h2>Username</h2>
+        <input type="text" name="username" value="">
+        <%if (passwordShort == "true"){%>
+            <p class="warning">Password must be over 6 characters!</p>
+        <%}%>
+        <h2>Password</h2>
+        <input type="password" name="password" value="">
+        <%if (passwordIncorrect == "true"){%>
+            <p class="warning">Password's don't match!</p>
+        <%}%>
+        <h2>Confirm Password</h2>
+        <input type="password" name="confirmpassword" value="">
+        <button type="submit" name="button">Create</button>
+    </form>
+  </div>
+
+<%- include("Footer") -%>
