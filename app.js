@@ -6,7 +6,6 @@ const LocalStrategy = require("passport-local");
 const mongoose = require("mongoose");
 const bcrypt = require("bcrypt");
 const session = require("express-session");
-const ObjectId = require("mongodb").ObjectID;
 
 mongoose.connect("mongodb+srv://tacobellcommercial:" + "hVPuHndcaAs5fe4r" + "@cluster0.8asjxa5.mongodb.net/?retryWrites=true&w=majority");
 
