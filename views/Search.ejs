@@ -26,11 +26,13 @@
           <%if (relevantUsers.length === 0){%>
               <p class="subtext">No results found...</p>
           <%}%>
-          <div class="users-container">
-            <%relevantUsers.forEach(element=>{%>
-                <a href="/profile/<%=element._id%>">@<%=element.name%></a>
-            <%})%>
-          </div>
+          <%if (relevantUsers.length > 0){
+            <div class="users-container">
+              <%relevantUsers.forEach(element=>{%>
+                  <a href="/profile/<%=element._id%>">@<%=element.name%></a>
+              <%})%>
+            </div>
+          <%}%>
       </div>
 
       <div class="newest-twits">
