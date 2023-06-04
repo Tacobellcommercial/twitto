@@ -7,7 +7,7 @@ const mongoose = require("mongoose");
 const bcrypt = require("bcrypt");
 const session = require("express-session");
 
-mongoose.connect("mongodb+srv://tacobellcommercial:" + "hVPuHndcaAs5fe4r" + "@cluster0.8asjxa5.mongodb.net/?retryWrites=true&w=majority");
+mongoose.connect("mongodb+srv://tacobellcommercial:" + process.env.SECRET2 + "@cluster0.8asjxa5.mongodb.net/?retryWrites=true&w=majority");
 
 const app = express();
 
